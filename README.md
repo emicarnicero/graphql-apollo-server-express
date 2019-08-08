@@ -11,7 +11,7 @@ https://www.robinwieruch.de/graphql-apollo-server-tutorial/
 var mongoDB = 'mongodb+srv://username:password@cluster0-vxs1e.gcp.mongodb.net/test?retryWrites=true';
 ```
 
-- Replace "me" in \src\index.js
+- Replace "me" in \src\index.js with an existing user
 
 For example:
 ```
@@ -61,17 +61,7 @@ Query example
 }
 ```
 
-Mutations examples
-
-```
-mutation {
-  createUser(user : {username : "newuser", email: "newusermail@mail.com", messages: []}) {
-    id
-    	username
-	email
-  }
-}
-```
+Mutation example
 
 ```
 mutation {
