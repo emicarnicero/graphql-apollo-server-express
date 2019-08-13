@@ -13,7 +13,7 @@ const server = new ApolloServer({
   resolvers,
   context: async () => ({
     models,
-    me: await models.UserModel.findOne({'email' : 'newuser@mail.com'}).populate('messages'),
+    me: await models.UserModel.findOne({'email': 'newuser@mail.com'}).populate('messages'),
   }),
 });
 
